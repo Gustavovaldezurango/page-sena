@@ -1,0 +1,44 @@
+<head>
+    <%= stylesheet_link_tag "devise" %>
+</head>
+       
+
+
+<body>
+    <div class="main-devise">
+        <main class="main-login-devise">  
+            <section class="section-devise">
+                <article class="article-devise">
+                    <h2 id="titulo">Iniciar Sesión</h2>
+                    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                    <div class="field">
+                        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Ingrese correo electronico" %>
+                    </div>
+                    <br>
+                    <div class="field">
+                        <%= f.password_field :password, autocomplete: "current-password", placeholder: "Ingrese contraseña"%>
+                    </div>
+                    <% if devise_mapping.rememberable? %>
+                        <div class="field">
+                            <%= f.check_box :remember_me %>
+                            <%= f.label :Recuerdame %>
+                        </div><br>
+                    <% end %>
+                        <div class="actions">
+                            <%= f.submit "Ingresar" %>
+                        </div>
+                    <% end %><br>
+                    <%= render "devise/shared/links" %>
+                    <br>
+                </article>
+            </section>
+            <aside class = "aside-divise">
+                <center>
+                    <div id="logo"><%= image_tag("logo.png", width: "150", height: "120")%></div><br>
+                    <div class="informacion-empresa"><h2>Centro Industrial y de Aviación</h2></div>
+                    <div class="informacion-empresa"><p>información</p></div>
+                </center>
+            </aside>
+        </main>
+    <div>   
+</body>

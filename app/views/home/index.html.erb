@@ -1,0 +1,40 @@
+<head>
+  <%= stylesheet_link_tag "home" %>
+</head>
+
+<body>
+ 
+    <nav>
+        <section id="Index-Logo-home"><%= image_tag("logo.png", width: "80", height: "60")%></section>
+        <section id="Index-Salir-home">
+            <div id="Texto-Salir-home">
+                <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
+            </div>
+        </section>
+    </nav>
+
+    <main>
+        <section class="Container-Lista-home">
+            <div id="Titulo-Menu-home">
+                <h2>Titulo</h2>
+            </div>
+            <div id="Menu">
+                <ul class="Home-Listas">
+                    <li class="Lista1-home"><%= link_to "Areas", areas_path, method: :get %></li>
+                    <li class="Lista1-home"><a href="#">Programacion</a></li>
+                    <li class="Lista1-home"><a href="#">Descripcion</a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section id="Index-Bienvenida-home">
+            <h3>Bienvenidos</h3>
+        </section>
+        
+    </main>
+
+  
+</body>
+</html> 
+

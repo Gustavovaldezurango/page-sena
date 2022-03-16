@@ -1,0 +1,90 @@
+.main-devise{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.main-login-devise{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    height: 450px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .20) 0%, rgba(0,0,0,.30) 100%), url("https://i.ytimg.com/vi/n_TaJ-zf0aU/maxresdefault.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 1400px;
+  
+}
+
+.main-register-devise{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    height: 450px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .20) 0%, rgba(0,0,0,.30) 100%), url("https://www.elestudiante.com.co/wp-content/uploads/2020/02/sena-aprendizaje-1.jpg");
+    background-size: 1400px;
+  
+}
+
+.section-devise{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 1px black;
+    height: 300px;
+    width: 500px;
+
+}
+
+.article-devise{
+    padding-top: 10px;
+    text-align: center;
+    height: 290px;
+    width: 380px;
+}
+
+.aside-divise{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 1px black;
+    height: 300px;
+    width: 500px;
+}
+
+#logo{
+    padding-top: 20px;
+    width: 150px;
+    height: 90px;
+}
+
+#titulo{
+    color: rgb(255, 72, 0)
+}
+
+.informacion-empresa{
+    padding-top: 10px;
+    color: rgb(255, 72, 0)
+}
+
+footer{
+    background-color: #DACDCD;
+    height: 60px;
+}
+
+#info-footer{
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#registrar{
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
