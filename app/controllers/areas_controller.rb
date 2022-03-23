@@ -1,6 +1,7 @@
 class AreasController < ApplicationController
   def index
     @areas = Area.all
+    render json: @areas, status: 200
   end
 
   def show
@@ -10,13 +11,14 @@ class AreasController < ApplicationController
  
   def new 
   @area = Area.new
+  render json: @area, status: 200
   end
   
   
   def create
-    @area = Area.new(
-    params[:codigo_area],
-    params[:nombre_area])
+    @area = Area.create!(
+    codigo_area: params[:codigo_area],
+    nombre_area: params[:nombre_area])
     if @area.save 
       redirect_to areas_path
     else 
@@ -24,4 +26,19 @@ class AreasController < ApplicationController
     end 
     
   end
+  def update 
+    @area =  Area.find(params[:codigo_area])
+    Area.update(
+    codigo_area: params[:codigo_area],
+    nombre_area: params[:nombre_area]
+    )
+    render json: @area, status: 200
+   end 
+  
+  def destroy 
+    @area =  Area.find(params[:codigo_area])
+    Area.destroy!
+    render status: 200
+
+   end
 end
